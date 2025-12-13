@@ -1,5 +1,356 @@
 ### Changelog
 
+#### 2025/11/05
+
+-	Ported over most of the Xillia 1 table to PC
+-	Added "Freeze Battle Arena timer" to Vesperia
+-	Added "Arte unlocks" and "Craymel unlocks" to Eternia
+-	Added "Arte unlocks" to Phantasia
+-	Fixed Vesperia "Item Properties Editor" being broken
+-	Vesperia "No encounters" now disables enemies following and enemy collision by default.
+-	Added the following to Innocence DS (by Zeke/Samu):
+	-	Equipment Editor
+	-	Styles/skills
+	-	Inventory
+	-	Arte Proficiency
+-	Added "Arte List" to Innocence DS (dropdown by Zeke)
+-	Completely remade BTSK for Abyss
+	-	It now lists every character and arte data (spells not included)
+	-	It also now includes every possible hit for the selected character/arte
+
+#### 2025/05/30
+
+-	Fixed Vesperia "Arte Sphere Plus" issues
+
+#### 2025/05/06
+
+-	Added "Arte Canceller" to Graces F table
+-	Added "Shuttle always available" to Graces F table
+-	Added "All Shuttle locations unlocked" to Graces F table
+-	Added "All learned artes equipable" to Graces F table
+-	Added "No encounters" to Vesperia table
+	-	Accompanied by an "Enemies don't follow" script
+-	Updated "Arte Canceller" for Vesperia to be more reliable
+-	Updated "Every arte is aerial usable for Players" for Vesperia to be more reliable
+-	Backend changes for Symphonia, Vesperia, Zestiria and Berseria tables
+-	Improved Gem editor to be more reliable in Graces F table
+-	Moved Shard/Gem/Weapon/Armor Editor and Difficulty values to Pointers in Graces F table
+-	Reorganized Vesperia table to be more in line with Graces F
+
+#### 2025/03/07
+
+-	Improved Graces F enable script to work more reliably
+-	Fixed Arte List in Graces F table
+-	Improved shard and gem hover in Shard/Weapon/Armor/Gem editor
+-	Added the following features to Graces F:
+	-	Save Anywhere
+	-	Disable double-tap dodging
+	-	No hitstop
+	-	Disable Asbel's Sword Draw and Sheathe mechanic
+	-	Manual control of Asbel's B arte alterations
+        - Hold **SPACE**/**[]**/**X** (Guard) to use the altered versions.
+	-	Enemies don't attack
+	-	Arte Sphere
+        - **CAUTION!** If you have used Narikiri Dolls prior to the Arte Sphere script, you will need to change costume once after enabling the script!
+        - You can use **SHIFT**/**L2**/**LT** (Free Run) to swap pages, and to use them in battle.
+	-	Show all entries in Enemy Book
+
+#### 2025/01/17
+
+-	Added Graces F (PC) table and retired PS3 version
+-	Added Eternia PSP table
+-	Added Narikiri Dungeon X patches:
+	-	Walk through walls
+	-	(A mostly useless) Debug menu
+	-	An unfinished 60 fps mod
+-	Added Rebirth patches:
+	-	Hitstop disabled in solo
+	-	Hitstop enabled in multiplayer
+
+#### 2024/12/20
+
+-	Fixed Xillia 1 and Xillia 2 tables not working properly for other regions
+-	Added suggestions from CeruleanSky to the Destiny DC table
+-	Minor fixes to arte names in Xillia 2 and Abyss
+-	Fixed arte usage being wrong for Heatwave in Xillia 2
+-	Added the ability to unlock extra arte slots early in Hearts R
+-	Ported Symphonia - Dawn of the New World table to the Wii version
+-	Recreated Arte Usage to be able to use with narikiri characters in the following script
+-	Implemented an automated script to easily add new characters to Xillia 1
+	-	Supported characters:
+		-	Jude (narikiri)
+		-	Milla (narikiri)
+		-	Alvin (narikiri)
+		-	Elize (narikiri)
+		-	Rowen (narikiri)
+		-	Leia (narikiri)
+		-	Gaius
+		-	Muzét
+		-	Wingul
+		-	Nachtigal
+		-	Gilland
+		-	Agria
+		-	Presa
+		-	Jiao
+		-	Ivar
+		-	Maxwell
+		-	Celsius
+		-	Volt
+		-	Golden Mage Knight - Scholar
+		-	Golden Mage Knight - Creator
+		-	Golden Mage Knight - Mercenary
+		-	Golden Mage Knight - Puppeteer
+		-	Golden Mage Knight - Conductor
+		-	Golden Mage Knight - Duelist
+		-	Bacura
+	-	Limitations: - Jude and Milla's dual Mystic Arte is not supported as narikiris.
+					 - Some characters cannot switch in or use items.
+					 - Some characters cannot properly initiate linked artes. Try using them with the other character instead.
+
+-	Recreated Arte Usage to be able to use with narikiri characters in the following script
+-	Implemented an automated script to easily add new characters to Xillia 2
+	-	Supported characters:
+		-	Jude (narikiri)
+		-	Milla (narikiri)
+		-	Alvin (narikiri)
+		-	Elize (narikiri)
+		-	Rowen (narikiri)
+		-	Leia (narikiri)
+		-	Gaius (narikiri)
+		-	Muzét (narikiri)
+		-	Ludger (narikiri)
+		-	Wingul
+		-	Nachtigal
+		-	Gilland (no artes)
+		-	Agria
+		-	Presa
+		-	Jiao
+		-	Ivar
+		-	Maxwell
+		-	Celsius
+		-	Volt
+		-	Golden Mage Knight (no artes)
+		-	Bacura
+		-	Victor
+		-	Julius
+		-	Bisley
+		-	Chronos
+		-	Rideaux
+		-	Stahn
+		-	Cress
+		-	Rutee
+		-	Mint
+	-	Limitations: - Common Linked Artes are not supported. Do not use them as you have a high chance of softlocking yourself.
+					 - Mystic Artes are not supported. Do not use them as you have a high chance of softlocking yourself.
+					 - Some characters cannot use items.
+					 - Requires you to remove weapons for non-narikiri/Victor characters. (or remove the model itself), or add their weapons if using narikiri. (don't forget the Lance of Kresnik for Chromatus in case of Ludger/Victor)
+					 - Some characters cannot properly initiate linked artes. Try using them with the other character instead.
+					 - Chromatus gauge is tied to Ludger, it will not increase or show up on the HUD if he's not in party, but narikiris/Victor can activate Chromatus.
+	-	Some notes about Victor/Julius: they were given their own version of artes that they use or are unused. If they weren't given an arte, but they work, they were given Ludger's version.
+	-	If for some reason you still require the old "CHR script V2" version, you can find it under "Notes".
+-	Implemented "Artes Sphere Plus" script for Vesperia, giving the player 4 arte pages to work with, allowing the use of up to 32 artes in battle!
+-	Added a patch for Rebirth (PS2) that increases field run speed.
+
+#### 2024/08/07
+
+-	Updated "Allow using Mystic Artes without Overlimit" patch to remove side effects for Xillia 1 and Xillia 2
+-	Added Weapons/Armor to the Gem Editor in the Rebirth table.
+-	Added Grade Shop options to the Rebirth table.
+-	Added Grade to the Rebirth table.
+-	Added Encounter, Background, Time until encounter to the Legendia table.
+-	Updated frubam's Chloe fight editor to allow editing more than just that fight in the Legendia table.
+
+#### 2024/06/12
+
+-	Added changes suggested by CeruleanSky
+-	Added Graces arte slots for u4ick's extra artes patch
+-	Added Abyss arte slots for u4ick's extra artes patch
+
+-	Added "Have all difficulties" patch for Xillia 1 and Xillia 2 and Graces F
+-	Added "No encounters" patch for Graces F
+-	Ported "Unlock Lloyd & Co. for leveling" patch to another version of Symphonia - Dawn of the New World
+-	Added "Return Xillia 1 character switch in fights" patch for Xillia 2
+-	Added "Disable OVL requirement for Mystic Artes" patch for Xillia 1 and Xillia 2
+
+#### 2024/03/27
+
+-	Fixed game functions not working properly sometimes in Xillia 1
+-	Fixed the issue behind the "Something went wrong" message in Xillia 1
+
+-	Made the Symphonia table less dependent on the latest game version
+
+-	Added some accel stats to Graces F table
+-	Added Narikiri artes to Graces F table
+
+#### 2024/01/31
+
+-	Added "Save Anywhere" patch for Graces F and Vesperia (PS3)
+-	Added "No linking requirement for EX Dungeon" patch for Xillia 2
+-	Added "Unlock Lloyd & Co. for leveling" for Symphonia - Dawn of the New World
+-	Added "No party lock" for Xillia 1
+-	Added "Disable party checks" for Xillia 1 and Xillia 2
+-	Added "Disable party changes" for Xillia 1
+-	Added "Disable hitstop" for Xillia 1 and Xillia 2
+-	Added "Freeze battle timer" for Tales of VS
+
+-	Corrected some mistakes in Destiny DC's difficulty values editor
+
+-	Added On-Hover ability to Rebirth's Gem Editor
+
+-	Gem editor now automatically detects your version
+-	Gem editor now supports EU versions
+-	Added Base Max HP to Graces table
+-	Added some more info about shards
+-	Removed leftover hotkey from Weapon editor
+
+-	Added Devil's Arms kills for Xillia 1 and 2
+-	Updated Arte List for Xillia 1 and 2 with some QoL
+
+-	Expanded and gave Symphonia - Dawn of the New World's item list some quality of life upgrades
+-	Made the Symphonia - Dawn of the New World table more compatible with other game versions
+
+-	Added Overlimit gauges to Innocence R and Hearts R
+
+-	Fixed Arise's Have 1 of every item script
+-	The Arte List now generates a list of dropdown options
+
+-	Made Destiny DC's difficulty options savable
+
+#### 2023/11/09
+
+-	Updated Arise to latest game version (10.47.00 according to buildinfo, buildid 12162925)
+
+#### 2023/10/20
+
+-	Corrected some mistakes in Destiny DC's difficulty values editor
+
+-	Made the Graces F table more compatible with other region versions
+-	Expanded difficulty values in Graces F
+-	Added a (hopefully) future proof Shard/Gem/Weapon/Armor editor
+
+#### 2023/09/16
+
+-	Updated the Auto Control Mode script to be able to pick whether to set to Auto, Semi-Auto or Manual. (default Manual)
+	-	Applies to both Phantasia and Destiny
+
+-	Added some backgrounds as a dropdown for Symphonia
+
+#### 2023/07/24
+
+-	Added new table: Destiny (PS1)
+	-	Features:
+		-	Party Formation Editor
+		-	Stats Editor
+		-	In-Battle Stats Editor
+		-	Equipment Editor
+		-	Change Control Modes in and outside of battle
+		-	Enable or Disable Dash Modes
+		-	Enable or Disable Combo Command Modes
+		-	Automatic Manual Control Mode, Dash Mode and Combo Command Mode script
+
+-	Updated PS1 tables to be more future proof (they might even work on other emulators now, but it is not guaranteed, try your luck!)
+	-	Affected:
+		-	Phantasia
+		-	Eternia
+		
+-	Phantasia now has a more future proof version of the Automatic Manual Control Mode, Dash Mode and Combo Command Mode + Auto Death Cam script
+-	Added Arte Usage for Phantasia
+
+#### 2023/07/11
+
+-	Vesperia's "Arte Properties Editor" will now automatically update itself for the following groups:
+	-	Arte learning conditions
+	-	Evolve conditions
+	-	Characters that can use this arte
+
+-	Changed Xillia 1's Final Boss encounter editor to use the final Wingul encounter instead
+	-	If for some reason you still want the old one, it can be found under notes
+
+-	Added "Alisha can armatize" script to Zestiria
+
+-	Updated Arte names and Grade Shop options to reflect the english patch names for Destiny DC
+
+-	Addded a difficulty unlocker for Destiny DC
+
+-	Added Arte Usage to the following games:
+	-	Destiny DC
+	-	Innocence R
+	-	Hearts R
+	
+-	Added Arte Unlocks to the following games:
+	-	Innocence R
+	-	Hearts R
+	
+-	Added Equipment Editor to the following games:
+	-	Innocence R
+	-	Hearts R
+	
+-	Added Bonds and Somatic Bonds to the following games:
+	-	Innocence R
+	-	Hearts R
+
+#### 2023/06/26
+
+-	Added a Skills Editor for Narikiri Dungeon X.
+
+-	Ported over certain things from GameCube:
+	-	"No Recoil Time after Tech"
+	-	"Walk Through Walls"
+	-	"Get on Rheiards any time"
+	
+-	Updated all PS2 and PSP tables to use a newer and faster enable mechanism.
+	Note that this may require newer versions of the emulator(s).
+	In case it detects the new method is not available, it will revert to the old method.
+
+#### 2023/06/14
+
+-	Vesperia changes:
+	-	Updated Arte Canceller to be able to configure which side is affected.
+	-	Added a script that lets you chain artes in any order.
+	-	Added a script that lets you use Player artes in the air.
+
+-	Symphonia changes:
+	-	Added enemies don't attack script
+	-	Added minimum damage script (the numbers shown on screen are still the normal values, though)
+	-	Added infinite normal attacks script
+	-	Added a script that gives everyone Colette's wings
+	-	Added a script that lets you ignore OVL restriction for Lloyd/Kratos/Sheena/Regal,
+		and also be able to use Mystic Artes multiple times (applies for all characters)
+
+#### 2023/06/02
+
+-	Added Grade Shop options to Graces, Hearts R and Innocence R.
+-	Added Arte Canceller for Vesperia.
+	Some notes regarding it:
+	-	Mystic Artes are harder to activate.
+	-	Arte order still applies (base -> arcane -> altered, more with skills, and OVL allows free chaining)
+	-	During OverLimit, certain actions that require mashing do not work, as they will be instantly canceled.
+	-	Burst Artes activate instantly upon holding the button.
+	-	Any action can be canceled, except for Mystic Artes. (this includes normal attacks, artes, Fatal Strikes, Burst Artes, activating OVL and spell casting)
+	-	The Burst Arte/Fatal Strike tutorials may softlock the game. Please turn them off while doing them.
+		(if you do get in this state, just set the character's HP to 0 to be able to reload a save)
+	-	I have also included tools regarding Fatal Strike to help you incorporate them into combos, if you wish to.
+
+#### 2023/04/26
+
+-	Added a new script for Vesperia, where enemies don't activate Over Limit.
+-	Added a secondary script to Xillia 1/2 in case the first linking script doesn't work
+-	Added Samu's Jude transform script
+
+#### 2023/02/24
+
+-	Added a rudimentary Ludger -> Victor script
+
+#### 2023/01/03
+
+-	Fixed some possible crashes in the linking scripts for Xillia 1 and Xillia 2.
+
+#### 2023/01/02
+
+-	Updated Xillia 1 and Xillia 2 scripts to more recent rpcs3 builds (Arte Editor/Multiplayer linking)
+-	Backported Version 2 of the linking script to Xillia 1.
+-	Minor table cleanup.
+
 #### 2022/12/06
 
 -	Updated Eternia table to be compatible with the current version of DuckStation.

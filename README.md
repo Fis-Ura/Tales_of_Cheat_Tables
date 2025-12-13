@@ -1,7 +1,3 @@
-
-
-
-  
  # Tales of Cheat Engine tables
 
 These tables were originally meant to be for myself, but I am releasing all of them here. 
@@ -11,8 +7,10 @@ Having trouble? See the [troubleshooting](https://github.com/Sora3100/Tales_of_C
 
 [Click here to see the changelog.](https://github.com/Sora3100/Tales_of_Cheat_Tables/blob/master/CHANGELOG.md)
 
-Below is a listing of features for each table.
+Below is a listing of features for each table and patch.
 
+ # Cheat Tables
+ 
  ## Abyss (PS2)
 Based on the SLUS21386 version of the game.
  
@@ -28,7 +26,7 @@ Features:
  - Arte List Editor
 
  ## Arise (PC)
-Based on the 2022/04/07 (1.07) update.
+Based on the 2023/11/09 (10.47.00 according to buildinfo, buildid 12162925) update.
 
 Features:
  - Party Formation Editor
@@ -46,6 +44,21 @@ Based on the 2017/02/03 update.
 Features:
  - Show all entries in Enemy Book
 
+ ## Destiny (PS1)
+Based on the SLUS00626 version of the game.
+
+Emulator used: DuckStation 0.1-5485-gc6a57273 (dev)
+
+Features:
+ - Party Formation Editor
+ - Stats Editor
+ - In-Battle Stats Editor
+ - Equipment Editor
+ - Change Control Modes in and outside of battle
+ - Enable or Disable Dash Modes
+ - Enable or Disable Combo Command Modes
+ - Automatic Manual Control Mode, Dash Mode and Combo Command Mode script
+
  ## Destiny Director's Cut (PS2)
 Based on the SLPS25842 version of the game.
 
@@ -57,6 +70,7 @@ Features:
  - In-Battle Stats Editor
  - Equipment Editor
  - Arte List Editor (including Narikiri Dolls)
+ - Arte Usage
  - Gald & EX Point Editor
  - Unlock any and all artes
  - Change each character's Blast Calibers
@@ -83,10 +97,15 @@ Features:
  - Arte Usage Editor
  - Equipment Editor
 
- ## Eternia (PS1)
-Based on the SLUS01355 (Disc 1), SLUS01367 (Disc 2) and SLUS01368 (Disc 3) version of the game.
- 
-Emulator used: DuckStation 0.1-5406-ge27f259b (dev)
+ ## Eternia (PS1, PSP)
+For the PS1, the table is based on the SLUS01355 (Disc 1), SLUS01367 (Disc 2) and SLUS01368 (Disc 3) version of the game.
+For the PSP, the table is based on the ULES00176 version of the game.
+
+Emulators used: 
+
+PS1: DuckStation 0.1-5485-gc6a57273 (dev)
+
+PSP: PPSSPP v1.11.2-366-g4d02d64fd
 
 Features:
  - Party Formation Editor
@@ -100,19 +119,32 @@ Features:
  - Disable encounters
  - Change Arte Usage
 
- ## Graces F (PS3)
-Based on the BLUS30903 version of the game.
-
-Emulator used: rpcs3 0.0.12-10883-92d65ff3 Alpha
+ ## Graces F (PC)
+Based on the 1.0.2 (buildID 17447501) version of the game.
 
 Features: 
  - Party Formation Editor
  - Stats Editor
- - In-Battle Stats Editor
  - Change field movement speed
  - Change difficulty values
- - Change battle BGM
  - Arte List Editor
+ - Grade Shop options
+ - Arte usage multiplier
+ - Shard/Weapon/Armor/Gem editor
+  - Save Anywhere
+  - Disable double-tap dodging
+  - No hitstop
+  - Disable Asbel's Sword Draw and Sheathe mechanic
+  - Manual control of Asbel's B arte alterations
+    - Hold **SPACE**/**[]**/**X** (Guard) to use the altered versions.<br/>
+  - Enemies don't attack
+  - Arte Sphere
+    - **CAUTION!** If you have used Narikiri Dolls prior to the Arte Sphere script, you will need to change costume once after enabling the script!
+    - You can use **SHIFT**/**L2**/**LT** (Free Run) to swap pages, and to use them in battle.
+  - Arte Canceller
+  - Shuttle always available
+  - All Shuttle locations unlocked
+  - All learned artes equipable
 
  ## Hearts (NDS)
 Based on the NTR-CTUJ-JPN version of the game.
@@ -131,6 +163,11 @@ Emulator used: Vita3K
 Features:
  - Stats Editor
  - Party Formation Editor
+ - Equipment Editor
+ - Arte Unlocks
+ - Arte Usage
+ - Somatic Bonds Editor
+ - Grade Shop options
 
  ## Innocence (NDS)
 Based on the NTR-AYTJ-JPN version of the game.
@@ -149,6 +186,11 @@ Emulator used: Vita3K
 Features:
  - Stats Editor
  - Party Formation Editor
+ - Equipment Editor
+ - Arte Unlocks
+ - Arte Usage
+ - Bonds Editor
+ - Grade Shop options
 
  ## Legendia (PS2)
 Based on the SLUS-21201 version of the game.
@@ -164,7 +206,7 @@ Features:
  ## Phantasia (PS1)
 Based on the SLPS91210 version of the game.
 
-Emulator used: Beetle PSX HW 0.9.44.1 9f126e5
+Emulator used: DuckStation 0.1-5485-gc6a57273 (dev)
 
 Features: 
  - Party Formation Editor
@@ -175,6 +217,7 @@ Features:
  - Enable or Disable Dash Modes
  - Enable or Disable Combo Command Modes
  - Difficulty Modifier
+ - Automatic Manual Control Mode, Dash Mode and Combo Command Mode + Auto Death Cam script
 
  ## Phantasia: Narikiri Dungeon X (PSP)
 Based on the ULJS00293 (1.01) version of the game.
@@ -221,11 +264,19 @@ Features:
  - Advanced Encounter Modifier ported over from GameCube version
  - Save anywhere
  - Field run speed modifier
+ - Enemies don't attack
+ - Minimum Damage
+ - Walk through walls
+ - Rheiards usable any time
 
- ## Symphonia - Dawn of the New World (PS3)
-Based on the BLUS31172 version of the game.
+ ## Symphonia - Dawn of the New World (PS3, Wii)
+Based on the BLUS31172 and RT4EAF versions of the game, respectively.
 
-Emulator used: rpcs3 0.0.12-10883-92d65ff3 Alpha
+Emulators used:
+
+PS3: rpcs3 0.0.12-10883-92d65ff3 Alpha
+
+Wii: Dolphin 2409 (rev 3c4d4fcd09173ea070dc812ab5d64ca3a3af5f29)
 
 Features: 
  - Party Formation Editor
@@ -257,38 +308,34 @@ Features:
  - Save Anywhere script
  - Arte Properties Editor
  - Enemy Data Editor
+ - Arte Canceller
+ - Arte Sphere Plus (4 arte sets instead of the vanilla 2)
  
  This table has some notes regarding changing encounters that I never figured out.
  
- ## Xillia (PS3)
-Based on the NPUB31136 version of the game.
+ ## Xillia 1 (PC)
+Based on the 1.0.2 (buildID 20582652) version of the game.
 
-Emulator used: rpcs3 0.0.12-10883-92d65ff3 Alpha
-
-Features: 
+Features:
  - Party Formation Editor
  - Stats Editor
  - Equipment Editor
  - Arte List Editor
- - Gald Editor
- - Difficulty Modifier
- - Enable or Disable Overlimit
- - Enable or Disable menu functions
- - Change World Map (fast travel menu) version
  - Multiplayer Linking
  - Arte Editor
- - Change Gaius/Muzét Final Boss Encounter
  - Enable or Disable any arte/spell
  - Enable or Disable any skill
- - Turn on/off Grade Shop options at any time
- - Change field movement speed
- - Inventory Editor
- - Change Arte Usage
+ - Modify Arte Usage
+ - Disable hitstop
+ - Disable guest party members (members in party but cannot participate)
+ - Disable party checks
+ - Disallow counter-attacks
+ - Disable tap dash
 
  ## Xillia 2 (PS3)
 Based on the BLUS31397 version of the game.
 
-Emulator used: rpcs3 0.0.12-10883-92d65ff3 Alpha
+Emulator used: rpcs3 0.0.25-14515-02f3583 Alpha
 
 Features: 
  - Party Formation Editor
@@ -318,14 +365,14 @@ Features:
  - Change Chronos (Canaan) Encounter
  - Change Rideaux & Ivar Encounter
  - Change Elite Tag and Party Encounter
- - Change Arte Usage by Cultevel81
+ - Modify Arte Usage
  - Turn on/off Grade Shop options at any time
  - Arte Editor
  - Enable or Disable any arte/spell
  - Enable or Disable any skill
  - Change field movement speed
  - Inventory Editor
- - The ability to play as bosses
+ - The ability to play as bosses, or more of the same character (narikiri)
 
  ## Zestiria (PC)
 Based on the 2015/12/04 (1.4) update.
@@ -333,4 +380,90 @@ Based on the 2015/12/04 (1.4) update.
 Features: 
  - Change Camera Zoom
  - Change Camera Height
+ - Alisha can armatize
  - Show all entries in Enemy Book
+ 
+ # Patches
+ 
+ ## Rebirth (PS2)
+Available for SLPS25450.
+ 
+Features:
+ - Increased field run speed
+ - Hitstop disabled in solo
+ - Hitstop enabled in multiplayer
+
+ ## Graces f (PS3)
+Available for:
+ - BLUS30903
+ - NPUB31133
+ - BLES01617
+ - NPEB01288
+ - BLJS10093
+
+Features:
+ - Save Anywhere
+ - Have all difficulties
+ - No Encounters
+ 
+ ## Xillia 1 (PS3)
+ Available for:
+ - BLUS31006
+ - NPUB31136
+ - BLES01815
+ - NPEB01310
+ - BLJS10120
+ 
+Features:
+ - No party lock
+ - Disable party checks
+ - Disable party changes
+ - Disable hitstop
+ - Have all difficulties
+ - Disable OVL requirement for Mystic Artes
+ 
+ ## Xillia 2 (PS3)
+ Available for:
+ - BLUS31397
+ - NPUB31443
+ - BLES01962
+ - NPEB01858
+ - BLJS10188
+ 
+Features:
+ - No linking requirement in EX Dungeon
+ - Disable party checks
+ - Disable hitstop
+ - Ludger's Voice always changable
+ - Have all difficulties
+ - World Map always filled
+ - Disable OVL requirement for Mystic Artes
+ - Return Xillia 1 character switch in fights
+ 
+ ## Symphonia - Dawn of the New World (PS3)
+ Available for:
+ - NPUB31194
+ - BLUS31172
+ 
+Features:
+ - Unlock Lloyd & Co. for leveling
+ 
+ ## Vesperia (PS3)
+Available for BLJS10053.
+
+Features:
+ - Save Anywhere
+ 
+ ## VS (PSP)
+Available for ULJS00209.
+
+Features:
+ - Freeze battle timer
+
+ ## Narikiri Dungeon X (PSP)
+Available for ULJS00293.
+
+Features:
+ - Walk through walls
+ - Debug menu
+ - An unfinished 60 fps mod
